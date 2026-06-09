@@ -1,0 +1,76 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f3f7f4;
+    color: #222;
+}
+
+/* CABEÇALHO */
+.topo {
+    background: #2e2e2e; /* Cor Pop!_OS escura */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.topo nav {
+    margin-top: 10px;
+}
+
+.topo nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topo nav a:hover {
+    text-decoration: underline;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    margin-bottom: 25px;
+}
+
+.bloco {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+h2, h3 {
+    color: #2e2e2e; /* Cor Pop!_OS */
+    margin-bottom: 12px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #555;
+}
