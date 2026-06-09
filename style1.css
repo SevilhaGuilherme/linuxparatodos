@@ -1,0 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    flex: 1 1 160px;
+    max-width: 180px;
+    background: white;
+    padding: 18px 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 0.95em;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* CORES DOS CARDS POR DIFICULDADE */
+.card.iniciante { border-left: 5px solid #2ecc71; }
+.card.intermediario { border-left: 5px solid #f1c40f; }
+.card.avancado { border-left: 5px solid #e74c3c; }
+
+.card.iniciante:hover { background: linear-gradient(135deg, #2ecc71, #27ae60); color: white; }
+.card.intermediario:hover { background: linear-gradient(135deg, #f1c40f, #f39c12); color: white; }
+.card.avancado:hover { background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; }
+
+/* SEÇÕES */
+section h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section h4 {
+    color: #7f8c8d;
+    margin: 15px 0 8px 0;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .card { flex: 1 1 45%; }
+}
+
+@media (max-width: 480px) {
+    .card { flex: 1 1 100%; }
+    header nav a { display: block; margin: 8px 0; }
+}

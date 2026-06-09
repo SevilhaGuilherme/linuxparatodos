@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* SEÇÃO CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 200px;
+    max-width: 220px;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* CORES OFICIAIS DOS SISTEMAS NO HOVER */
+.card:nth-child(1):hover { background: #dd4814; color: white; }      /* Ubuntu */
+.card:nth-child(2):hover { background: #d70a53; color: white; }      /* Debian */
+.card:nth-child(3):hover { background: #294172; color: white; }      /* Fedora */
+.card:nth-child(4):hover { background: #87ca3e; color: white; }      /* Linux Mint */
+.card:nth-child(5):hover { background: #1793d1; color: white; }      /* Arch Linux */
+.card:nth-child(6):hover { background: #35bf5c; color: white; }      /* Manjaro */
+.card:nth-child(7):hover { background: #73ba25; color: white; }      /* openSUSE */
+.card:nth-child(8):hover { background: #3c4d6d; color: white; }      /* Pop!_OS */
+.card:nth-child(9):hover { background: #005a9c; color: white; }      /* Kali Linux */
+.card:nth-child(10):hover { background: #0055ff; color: white; }     /* Zorin OS */
+.card:nth-child(11):hover { background: #3498db; color: white; }     /* elementary OS */
+.card:nth-child(12):hover { background: #009688; color: white; }     /* MX Linux */
+.card:nth-child(13):hover { background: #008080; color: white; }     /* EndeavourOS */
+.card:nth-child(14):hover { background: #0f4d92; color: white; }     /* Slackware */
+.card:nth-child(15):hover { background: #9400d3; color: white; }     /* Gentoo */
+.card:nth-child(16):hover { background: #0070b8; color: white; }     /* Solus */
+.card:nth-child(17):hover { background: #0072bc; color: white; }     /* Deepin */
+.card:nth-child(18):hover { background: #009900; color: white; }     /* CentOS / AlmaLinux */
+.card:nth-child(19):hover { background: #2ecc71; color: white; }     /* Parrot OS */
+.card:nth-child(20):hover { background: #0072c6; color: white; }     /* Clear Linux */
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+}
